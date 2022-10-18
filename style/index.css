@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.rgb {
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(0, 153, 204);
+}
+
+.container{
+    width: 100vw;
+    background-color: rgb(9, 33, 184);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hex{
+    width: 50vw;
+    height: 50vh;
+    background-color: #2c8bab;
+}
+
+.hsl{
+    width: 50vw;
+    height: 50vh;
+    background-color: hsl(195, 59%, 42%);
+}
+.card{
+    width: 350px;
+    height: 200px;
+    background-color: whitesmoke;
+}
+
+.img-bg{
+    width: 600px;
+    height: 450px;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg");
+}
+.reapet{
+    width: 600px;
+    height: 450px;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+}
