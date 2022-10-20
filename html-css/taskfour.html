@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Four</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: #08c;
+    }
+
+    .animation1 {
+        width: 100px;
+        height: 100px;
+        background: rgb(255, 206, 8);
+        animation: ball-scale 0.5s infinite alternate;
+        border-radius: 50%;
+    }
+
+    .triangle {
+        width: 100px;
+        height: 100px;
+        background: rgb(255, 206, 8);
+        animation: triangel 2s infinite;
+        border-radius: 50%;
+    }
+
+    .barlolading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .bar1 {
+        height: 50px;
+        width: 5px;
+        background: #08c;
+        animation: bar-loding 1s infinite alternate;
+        animation-delay: 0s;
+    }
+
+    .bar2 {
+
+        height: 50px;
+        width: 5px;
+        background: #08c;
+        animation: bar-loding 1s infinite alternate;
+        animation-delay: 0.2s;
+    }
+
+    .bar3 {
+
+        height: 50px;
+        width: 5px;
+        background: #08c;
+        animation: bar-loding 1s infinite alternate;
+        animation-delay: 0.3s;
+    }
+
+    .bar4 {
+        height: 50px;
+        width: 5px;
+        background: #08c;
+        animation: bar-loding 1s infinite alternate;
+        animation-delay: 0.4s;
+    }
+
+    .circle-lod{
+        display: flex;
+        animation: circlelod infinite 1s;
+    }
+    .blue {
+        display: flex;
+        flex-direction: column;
+    }
+    .red{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .circleblue {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #08c;
+    }
+    .cored{
+
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #ff0303;
+    }
+    .bounch{
+        width: 50px;
+        height: 50px;
+        background: #f00;
+        border-radius: 50%;
+        animation: bounching 0.5s alternate infinite;   
+    }
+    @keyframes bounching {
+        from{
+            transform: translate();
+        }
+        to{
+            transform: translate(0, -100px);
+
+            background: #f00;
+        }
+    }
+    @keyframes circlelod {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(90deg);
+        }
+    }
+
+    @keyframes bar-loding {
+        from {
+            transform: scale(1, 0);
+        }
+
+        to {
+            transform: scale(1, 1);
+        }
+
+    }
+
+    @keyframes triangel {
+        0% {
+            transform: translate(50px);
+        }
+
+        25% {
+            transform: translatex(-100px);
+        }
+
+        50% {
+            transform: translatey(100px);
+        }
+
+        75% {
+            transform: translate(100px);
+        }
+
+        100% {
+            transform: translate(50px);
+        }
+    }
+
+    @keyframes ball-scale {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="animation1">
+        </div>
+        <h4>Ball Scall</h4>
+    </div>
+    <div class="container">
+        <div class="barlolading">
+
+
+            <div class="bar1">
+
+            </div>
+
+            <div class="bar2">
+
+            </div>
+
+            <div class="bar3">
+
+            </div>
+            <div class="bar4">
+
+            </div>
+
+        </div>
+        <h4>Bar loading</h4>
+    </div>
+    <div class="container">
+        <div class="triangle">
+        </div>
+    </div>
+    <div class="container">
+        <div class="circle-lod">
+            <div class="blue">
+                <div class="circleblue">
+                </div>
+                <div class="circleblue">
+                </div>
+            </div>
+            <div class="red">
+                <div class="cored">
+                </div>
+                <div class="cored">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="bounch">
+
+        </div>
+    </div>
+</body>
+
+</html>
