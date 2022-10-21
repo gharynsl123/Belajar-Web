@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        border: 2px #08c solid;
+        height: 100vh;
+    }
+
+    .translate {
+        background: #08c;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    .translate:hover {
+        /* 0px untuk ke samping, 100 untuk ke bawah */
+        transform: translate(0px, 100px);
+        background: rgb(10, 41, 56);
+        color: white;
+    }
+
+    .rotate {
+        background: #08c;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+    }
+
+    .rotate:hover {
+        transform: rotate(30deg);
+        color: white;
+        background: rgb(10, 41, 56);
+    }
+
+    .scale {
+        background: #08c;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 2s;
+        height: 200px;
+    }
+
+    .scale:hover {
+        /* 1 untuk menarik ke samping, 2 untuk menarik ke atas */
+        transform: scale(1, 2);
+        background: rgb(10, 41, 56);
+        color: white;
+    }
+</style>
+
+<body>
+    <!-- 
+        Transform ada 2:
+        1. 2D
+            - translate ada x(samping) y(atas)
+            - Rotate = memutar rotasi
+            - scale = mengubah ukuran ada x(samping) y(atas)
+            - skew = menarik diagonal
+            - metrix = 
+        2. 3D
+            - ratato
+     -->
+
+    <div class="container">
+        <!-- Contoh animasi Translate -->
+        <div class="translate">
+            <p>translate hover</p>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Contoh animasi Rotate -->
+        <div class="rotate">
+            <p>Rotate hover</p>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Contoh animasi Scale -->
+        <div class="scale">
+            <p>Scale hover</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linear-gradient</title>
+</head>
+<style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background: linear-gradient(to top right, #f0f, #fbff00);
+        background-size: 200%;
+        animation: gradient 8s infinite alternate;
+    }
+    @keyframes gradient{
+        0%{
+            background-position: 0%;
+        }
+        50%{
+            background-position: 25%;
+        }
+        75%{
+            background-position: 50%;
+        }
+        100%{
+            background-position: 0%;
+        }
+    }
+</style>
+
+<body>
+    <h1>Animasi Background</h1>
+</body>
+
+</html>

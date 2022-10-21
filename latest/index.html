@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: #08c;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item {
+        width: 200px;
+        height: 50px;
+        background: #ff0;
+        margin: 10px;
+    }
+    .warp{
+        width: 80%;
+        display: flex;
+        height: 500px;
+        flex-wrap: wrap;
+        background: white;
+    }
+    .block{
+        width: 400px;
+        height: 75px;
+        background: #7e98a9;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <!-- Flexbox VS grid -->
+
+    <!-- 
+        Flexbox atau flex 
+    -->
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <!-- 
+        Flex Direction:
+        1. Row (defult) = Item akan tampil horizontal kiri ke kana
+        2. Row-reverse = item akan tampil horizontal knan ke kiri
+        3. Column = item akan tampil veritcal atas ke bawah
+        4. Column-reverse = item akan tampil veritcal bawah ke atas
+     -->
+    <!-- warping -->
+    <div class="container">
+        <div class="warp">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+</body>
+
+</html>
